@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen>{
       ),
     );
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white60,
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -87,11 +87,11 @@ class _LoginScreenState extends State<LoginScreen>{
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:[
                     SizedBox(
-                      height: 35,
+                      height: 55,
                       child: Text(
                           "TALENTGRAM",
                       style: TextStyle(
-                        decoration: TextDecoration.underline,
+
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
                         color: Colors.purple,
@@ -99,7 +99,18 @@ class _LoginScreenState extends State<LoginScreen>{
                       //child: Image.asset(name
                       //fit:BoxFit.contain),
                     ),
-                    SizedBox(height: 45),
+                    SizedBox(
+                      height: 20,
+                      child: Text(
+                        "Welcome",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 35),
                     emailField,
                     SizedBox(height: 35),
                     passwordField,
